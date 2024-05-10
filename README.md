@@ -1,1 +1,0 @@
-# pitch-finder-lambda
