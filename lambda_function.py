@@ -30,7 +30,7 @@ def lambda_handler(event, context):
 
         cur = conn.cursor()
 
-        sql_string = f"select singer, song, highest_pitch, lowest_pitch, youtube_url \
+        sql_string = f"select singer, song, highest_pitch, lowest_pitch, youtube_url, youtube_image, youtube_listen_url \
                         from music where highest_pitch <= {high} and lowest_pitch >= {low} \
                         order by highest_pitch desc, lowest_pitch asc;"
 
@@ -44,7 +44,9 @@ def lambda_handler(event, context):
                 "song": row[1],
                 "high": row[2],
                 "low": row[3],
-                "youtube_url": row[4]
+                "youtube_listen_url": row[4],
+                "youtube_image": row[5],
+                "youtube_sing_url": row[6]
             })
 
         return {
