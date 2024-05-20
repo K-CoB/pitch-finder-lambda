@@ -44,9 +44,11 @@ def lambda_handler(event, context):
                 "song": row[1],
                 "high": row[2],
                 "low": row[3],
-                "youtube_listen_url": row[4],
-                "youtube_image": row[5],
-                "youtube_sing_url": row[6]
+                "image": row[5],
+                "url" : {
+                    "listen" : row[4],
+                    "sing" : row[6]
+                }
             })
 
         return {
