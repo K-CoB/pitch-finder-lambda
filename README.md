@@ -17,7 +17,7 @@
 
 
 ##  🛠️ How to install
-- 본 레포 clone `git clone https://github.com/K-CoB/pitch-finder-frontend`
+- 본 레포 clone `git clone https://github.com/K-CoB/pitch-finder-lambda`
 - 클론한 프로젝트 폴더를 연다
 - [[AWS] API Gateway + Lambda + RDS(Mysql)로 서버리스 서버 구축하기](https://velog.io/@chaeri93/AWS-API-Gateway-Lambda-RDSMysql%EB%A1%9C-%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0#api-gateway-%EC%84%A4%EC%A0%95) : aws 클라우드 구축
 - AWS Lambda 함수에 폴더 업로드
